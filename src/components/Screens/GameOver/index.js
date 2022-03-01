@@ -1,7 +1,7 @@
 import React from "react";
 
-function StartGame() {
-  return <div />;
+function GameOver() {
+  return <div>Game Over</div>;
 }
 
-export default StartGame;
+export default GameOver;
