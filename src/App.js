@@ -1,18 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
+
 import "./assets/css/global.css";
-import StartGame from "./components/Screens/StartGame";
-import InGame from "./components/Screens/InGame";
-import GameOver from "./components/Screens/GameOver";
+import ScreenProvider from "./context/Screen";
+import Window from "./pages/";
+import { useScreen } from "./context/Screen";
 
 function App() {
-  const [screen, setScreen] = useState("StartGame");
-
   return (
-    <div className="App">
-      {screen === "StartGame" ? <StartGame /> : ""}
-      {screen === "InGame" ? <InGame /> : ""}
-      {screen === "GameOver" ? <GameOver /> : ""}
-    </div>
+    <ScreenProvider>
+      <Window />
+    </ScreenProvider>
   );
 }
 
