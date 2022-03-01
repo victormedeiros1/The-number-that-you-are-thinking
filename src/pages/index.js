@@ -1,19 +1,21 @@
 import React from "react";
+import { PainelStyles } from "./styles";
+import { useScreen } from "../context/Screen";
+
 import StartGame from "../components/Screens/StartGame";
 import InGame from "../components/Screens/InGame";
 import GameOver from "../components/Screens/GameOver";
-import { useScreen } from "../context/Screen";
 
-function Window() {
-  const { screen, setScreen } = useScreen();
+function Painel() {
+  const { screen } = useScreen();
 
   return (
-    <div>
+    <PainelStyles>
       {screen === "StartGame" ? <StartGame /> : ""}
       {screen === "InGame" ? <InGame /> : ""}
       {screen === "GameOver" ? <GameOver /> : ""}
-    </div>
+    </PainelStyles>
   );
 }
 
-export default Window;
+export default Painel;

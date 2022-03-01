@@ -1,14 +1,16 @@
 import React from "react";
-
 import "./assets/css/global.css";
 import ScreenProvider from "./context/Screen";
-import Window from "./pages/";
-import { useScreen } from "./context/Screen";
+
+import Painel from "./pages/";
+import Container from "./components/Container";
 
 function App() {
   return (
     <ScreenProvider>
-      <Window />
+      <Container>
+        <Painel />
+      </Container>
     </ScreenProvider>
   );
 }
