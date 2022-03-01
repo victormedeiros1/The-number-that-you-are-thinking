@@ -1,14 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { useScreen } from "../../../context/Screen";
+import Button from "../../../components/Button";
 
 function StartGame() {
   const { setScreen } = useScreen();
 
-  return (
-    <div>
-      <button onClick={() => setScreen("InGame")}>Start</button>
-    </div>
-  );
+  return <Button onClick={() => setScreen("InGame")}>Start</Button>;
 }
 
 export default StartGame;
