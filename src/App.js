@@ -1,17 +1,16 @@
 import React from "react";
 import "./assets/css/global.css";
-import ScreenProvider from "./context/Screen";
-
 import Painel from "./pages/";
 import Container from "./components/Container";
+import Provider from "./context/";
 
 function App() {
   return (
-    <ScreenProvider>
+    <Provider>
       <Container>
         <Painel />
       </Container>
-    </ScreenProvider>
+    </Provider>
   );
 }
 

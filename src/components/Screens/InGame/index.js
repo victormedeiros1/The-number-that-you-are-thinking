@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import Button from "../../Button";
 
 import { useScreen } from "../../../context/Screen";
-function InGame() {
-  const { screen, setScreen } = useScreen();
+import { useAttempts } from "../../../context/Attempts";
 
-  const [attempts, setAttempts] = useState(1);
+function InGame() {
+  const { setScreen } = useScreen();
+  const { attempts, setAttempts } = useAttempts();
+
   const [machineNumber, setMachineNumber] = useState(150);
   const [min, setMin] = useState(0);
   const [max, setMax] = useState(300);
@@ -29,7 +31,6 @@ function InGame() {
   return (
     <div style={{ textAlign: "center" }}>
       <div>
-        <p>Tentativas: {attempts}</p>
         <p>Pense num número entre 0 e 300</p>
       </div>
       <div>O seu número é {machineNumber} ?</div>
