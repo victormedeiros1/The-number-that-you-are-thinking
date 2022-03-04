@@ -2,12 +2,10 @@ import styled from "styled-components";
 
 export const PainelStyles = styled.div`
   width: 500px;
-  height: 300px;
-
+  border-radius: 10px;
   display: flex;
   justify-content: center;
-  align-items: center;
-
+  padding: 50px;
   background-color: #fff;
-  border: 2px solid gray;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 `;

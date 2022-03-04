@@ -1,5 +1,6 @@
 import React from "react";
 import "./assets/css/global.css";
+import "./assets/css/fonts.css";
 import Painel from "./pages/";
 import Container from "./components/Container";
 import Provider from "./context/";

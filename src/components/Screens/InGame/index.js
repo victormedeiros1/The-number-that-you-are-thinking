@@ -8,9 +8,9 @@ function InGame() {
   const { setScreen } = useScreen();
   const { attempts, setAttempts } = useAttempts();
 
-  const [machineNumber, setMachineNumber] = useState(150);
+  const [machineNumber, setMachineNumber] = useState(250);
   const [min, setMin] = useState(0);
-  const [max, setMax] = useState(300);
+  const [max, setMax] = useState(500);
 
   const isSmaller = () => {
     setAttempts(attempts + 1);
@@ -31,7 +31,7 @@ function InGame() {
   return (
     <div style={{ textAlign: "center" }}>
       <div>
-        <p>Pense num número entre 0 e 300</p>
+        <p>Pense num número entre 0 e 500</p>
       </div>
       <div>O seu número é {machineNumber} ?</div>
       <Button onClick={isSmaller}>Menor</Button>
