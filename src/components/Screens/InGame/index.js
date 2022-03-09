@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Button from "../../Button";
-
+import { InGameContainer } from "./styles";
 import { useScreen } from "../../../context/Screen";
 import { useAttempts } from "../../../context/Attempts";
 
@@ -29,15 +29,13 @@ function InGame() {
   };
 
   return (
-    <div style={{ textAlign: "center" }}>
-      <div>
-        <p>Pense num número entre 0 e 500</p>
-      </div>
-      <div>O seu número é {machineNumber} ?</div>
+    <InGameContainer style={{ textAlign: "center" }}>
+      <p>Pense num número entre 0 e 500</p>
+      <p>O seu número é {machineNumber} ?</p>
       <Button onClick={isSmaller}>Menor</Button>
       <Button onClick={isRight}>Acertou</Button>
       <Button onClick={isLarger}>Maior</Button>
-    </div>
+    </InGameContainer>
   );
 }
 
