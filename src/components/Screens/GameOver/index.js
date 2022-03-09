@@ -9,9 +9,9 @@ function GameOver() {
   const { attempts } = useAttempts();
   return (
     <GameOverContainer>
-      <p>Game Over</p>
-      <p>Tentativas: {attempts}</p>
-      <Button onClick={() => setScreen("StartGame")}>Play Again</Button>
+      <p>Fim de Jogo</p>
+      <p>O algortimo deu {attempts} palpites para acertar</p>
+      <Button onClick={() => setScreen("StartGame")}>Jogar Novamente</Button>
     </GameOverContainer>
   );
 }

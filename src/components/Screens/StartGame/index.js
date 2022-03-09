@@ -18,7 +18,7 @@ function StartGame() {
           deve clicar em "Acertou".
         </p>
       </Rules>
-      <Button onClick={() => setScreen("InGame")}>Start</Button>
+      <Button onClick={() => setScreen("InGame")}>Jogar</Button>
     </StartGameContainer>
   );
 }
