@@ -8,17 +8,14 @@ function StartGame() {
 
   return (
     <StartGameContainer>
-      <Title>IMAGINE DE 0 A 500</Title>
+      <Title>Think a number between 0 and 500</Title>
       <Rules>
-        <h2>Como jogar</h2>
+        <h2>How to play</h2>
         <p>
-          Pense em um número de 0 a 500, a máquina começará a chutar valores e
-          tudo que você deve fazer é dizer se o número que ela chutou é maior ou
-          menor que o número que você está pensando, caso a máquina acerte você
-          deve clicar em "Acertou".
+          Think number between 0 and 500. The algorithm of search binary will show numbers and you must say if a number that you are thinking is greatest, smaller or equals the number showed.
         </p>
       </Rules>
-      <Button onClick={() => setScreen("InGame")}>Jogar</Button>
+      <Button onClick={() => setScreen("InGame")}>Play</Button>
     </StartGameContainer>
   );
 }

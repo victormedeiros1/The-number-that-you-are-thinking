@@ -30,11 +30,11 @@ function InGame() {
 
   return (
     <InGameContainer style={{ textAlign: "center" }}>
-      <p>Pense num número entre 0 e 500</p>
-      <p>O seu número é {machineNumber} ?</p>
-      <Button onClick={isSmaller}>Menor</Button>
-      <Button onClick={isRight}>Acertou</Button>
-      <Button onClick={isLarger}>Maior</Button>
+      <p>Think a number between 0 and 500.</p>
+      <p>The number that you are thinking is <b>{machineNumber}</b> ?</p>
+      <Button onClick={isSmaller}>Smaller</Button>
+      <Button onClick={isRight}>Equal</Button>
+      <Button onClick={isLarger}>Greatest</Button>
     </InGameContainer>
   );
 }

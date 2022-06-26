@@ -7,4 +7,5 @@ export const ContainerStyles = styled.div`
   width: 100vw;
   height: 100vh;
   min-height: 600px;
+  padding: 0 20px;
 `;

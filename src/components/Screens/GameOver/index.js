@@ -15,9 +15,9 @@ function GameOver() {
 
   return (
     <GameOverContainer>
-      <p>Fim de Jogo</p>
-      <p>O algortimo deu {attempts} palpites para acertar</p>
-      <Button onClick={resetStates}>Jogar Novamente</Button>
+      <p>Game Over</p>
+      <p>The algorithm of search binary needed {attempts} attempts for find the number that you was thinking.</p>
+      <Button onClick={resetStates}>Play again</Button>
     </GameOverContainer>
   );
 }

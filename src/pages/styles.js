@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const PainelStyles = styled.div`
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
