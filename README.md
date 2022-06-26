@@ -1,5 +1,5 @@
 # The number that you are thinking
-## In this game a algorithm of search binary will guess the number that you  are thinking.
+In this game a algorithm of search binary will guess the number that you  are thinking.
 
 ## Getting Started with Create React App
 
